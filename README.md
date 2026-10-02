@@ -54,7 +54,6 @@ pip install -e .
 
 ### 3. Configure Snowflake Connection
 Create or edit your `~/.dbt/profiles.yml` (see `aws_dbt_snowflake_project/ExampleProfiles.yml` for reference):
-
 ```yaml
 aws_dbt_snowflake_project:
   outputs:
@@ -93,11 +92,9 @@ dbt test
 dbt docs generate
 dbt docs serve
 ```
-
 ---
-
 ## 🛠️ Tech Stack
 - **Data Warehouse**: Snowflake
 - **Transformations**: dbt (Data Build Tool)
 - **Cloud Storage**: AWS S3
-- **Language**: SQL & Python (Jinja templating)
+- **Language**: SQL & Python (Jinja SQL)
